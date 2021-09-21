@@ -3,13 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
-import { CollegeProvider } from './contexts/CollegeContext';
 
 ReactDOM.render(
   <BrowserRouter>
-    <CollegeProvider>
-      <App />
-    </CollegeProvider>
+    <App />
   </BrowserRouter>,
   document.getElementById('root'),
 );
